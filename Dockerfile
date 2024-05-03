@@ -52,7 +52,7 @@ RUN wget -O models/loras/ip-adapter-faceid_sd15_lora.safetensors https://hugging
 RUN wget -O custom_nodes/ComfyUI_MagicClothing/checkpoints/magic_clothing_768_vitonhd_joint.safetensors https://huggingface.co/ShineChen1024/MagicClothing/resolve/main/magic_clothing_768_vitonhd_joint.safetensors?download=true
 RUN wget -O custom_nodes/ComfyUI_MagicClothing/checkpoints/cloth_segm.pth https://huggingface.co/ShineChen1024/MagicClothing/resolve/main/cloth_segm.pth?download=true
 RUN mkdir custom_nodes/ComfyUI_MagicClothing/checkpoints/stable_ckpt
-RUN wget -O custom_nodes/ComfyUI_MagicClothing/checkpoints/stable_ckpt/garment_extractor.safetensors https://huggingface.co/ShineChen1024/MagicClothing/resolve/main/stable_ckpt/garment_extractor.safetensors?download=true
+# RUN wget -O custom_nodes/ComfyUI_MagicClothing/checkpoints/stable_ckpt/garment_extractor.safetensors https://huggingface.co/ShineChen1024/MagicClothing/resolve/main/stable_ckpt/garment_extractor.safetensors?download=true
 RUN wget -O custom_nodes/ComfyUI_MagicClothing/checkpoints/stable_ckpt/ip_layer.pth https://huggingface.co/ShineChen1024/MagicClothing/resolve/main/stable_ckpt/ip_layer.pth?download=true
 
 # Go back to the root
