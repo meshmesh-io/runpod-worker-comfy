@@ -39,10 +39,11 @@ RUN wget -O models/checkpoints/sd_xl_base_1.0.safetensors https://huggingface.co
 RUN wget -O models/vae/sdxl_vae.safetensors https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors
 RUN wget -O models/vae/sdxl-vae-fp16-fix.safetensors https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl_vae.safetensors
 
-RUN cd custom_nodes && git clone https://github.com/frankchieng/ComfyUI_MagicClothing.git
-RUN cd ComfyUI_MagicClothing && pip3 install -r requirements.txt
-
-RUN cd ../../
+RUN cd custom_nodes && \
+    git clone https://github.com/frankchieng/ComfyUI_MagicClothing.git && \
+    cd ComfyUI_MagicClothing && \
+    pip3 install -r requirements.txt
+    
 RUN mkdir models/ipadapter
 
 # Get MagicClothing models
